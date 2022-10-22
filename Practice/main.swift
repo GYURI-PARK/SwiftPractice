@@ -1,58 +1,49 @@
-// 콘솔로그와 문자열 보간법
-import Swift
-let age: Int = 20
-print("안녕하세요! 저는 \(age)살 입니다:)")
+// 2022.10.23
 
-print("안녕하세요! 저는 \(age+4)살 입니다:)")
+// Swift의 기본 데이터 타입
+// Bool, Int, UInt(양의 정수), Float(32비트 부동 소수형), Double(64비트 부동 소수형), Character(한 글자), String
+// 다른 데이터 타입 간의 변형이 불가 (까다로움)
 
-
-print("==================================")
-print("\n")
-print("\n")
-// dump 사용
-
-class Person {
-    var name: String = "gyu ri"
-    var age: Int = 20
-}
+// Bool
+var someBool: Bool = true
+print(someBool)
+someBool = false
 
 
-let orange: Person = Person()
-
-print("(1) use print : ", orange)
-print("\n")
-print("(2) use dump : ")
-dump(orange)
+// Int
+var someInt: Int = -100
+print(someInt)
 
 
-print("==================================")
+// UInt
+// 양의 정수만 가능
+var someUInt: UInt = 100
+print(someUInt)
 
-// 상수와 변수
+// Float
+var someFloat: Float = 3.14
+print(someFloat)
 
-let constant: String = "차후에 변경이 불가능한 상수 let"
-var variable: String = "차후에 변경이 가능한 변수 var"
-print(constant)
-print(variable)
+// Double
+var someDouble: Double = 3.14
+print(someDouble)
+// someDouble = someFloat
 
-print("\n")
 
-variable = "변수는 이렇게 차후에 다른 값을 할당 할 수 있지만"
-print(variable)
+// Character
+var someCharacter1: Character = "🌍"
+print(someCharacter1)
 
-// 상수 선언 후 나중에 값 할당하기
-print("\n")
-print("\n")
+var someCharacter2: Character = "가"
+print(someCharacter2)
 
-let sum: Int
-let inputA: Int = 100
-let inputB: Int = 200
+var someCharacter3: Character = "S"
+print(someCharacter3)
 
-sum = inputA + inputB
-print(sum)
 
-// 변수 선언 후 나중에 값 할당하기
-var nickName: String
-nickName = "귤"
+// String
+var someString: String = "하하하 🌝"
+someString += "웃으면 복이 와요"
+print(someString)
 
-print(nickName)
-
+// someString = someCharacter3
