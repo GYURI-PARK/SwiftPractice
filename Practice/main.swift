@@ -1,49 +1,37 @@
-// 2022.10.23
+//
+//  main.swift
+//  Practice
+//
+//  Created by GYURI on 2022/10/23.
+//
 
-// Swift의 기본 데이터 타입
-// Bool, Int, UInt(양의 정수), Float(32비트 부동 소수형), Double(64비트 부동 소수형), Character(한 글자), String
-// 다른 데이터 타입 간의 변형이 불가 (까다로움)
+import Swift
 
-// Bool
-var someBool: Bool = true
-print(someBool)
-someBool = false
+// Any : Swift의 모든 타입을 지칭하는 키워드
+// AnyObject : 모든 클래스 타입을 지칭하는 프로토콜
+// nil : 없음을 의미하는 키워드
+//
+// Any
 
+var someAny: Any = 100
+print(someAny)
+someAny = "어떤 타입도 수용 가능합니다"
+print(someAny)
+someAny = 123.12
+print(someAny)
 
-// Int
-var someInt: Int = -100
-print(someInt)
-
-
-// UInt
-// 양의 정수만 가능
-var someUInt: UInt = 100
-print(someUInt)
-
-// Float
-var someFloat: Float = 3.14
-print(someFloat)
-
-// Double
-var someDouble: Double = 3.14
-print(someDouble)
-// someDouble = someFloat
+// let someDouble: Double = someAny
 
 
-// Character
-var someCharacter1: Character = "🌍"
-print(someCharacter1)
 
-var someCharacter2: Character = "가"
-print(someCharacter2)
+// AnyObject : 클래스의 인스턴스만 할당 가능
+class SomeClass{}
+var someAnyObject: AnyObject = SomeClass()
+print(someAnyObject)
+// someAnyObject = 123.123
 
-var someCharacter3: Character = "S"
-print(someCharacter3)
+// nil
+// someAny = nil
+// someAnyObject = nil
+// 어떤 데이터 타입도 들어올 수 있지만, 널값은 들어올 수 없다.
 
-
-// String
-var someString: String = "하하하 🌝"
-someString += "웃으면 복이 와요"
-print(someString)
-
-// someString = someCharacter3
