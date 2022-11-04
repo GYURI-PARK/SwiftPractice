@@ -10,7 +10,7 @@
 > 📌 기본 데이터 타입 /  Any / AnyObject / nil
 
 
-### 3. [Swift 기초 문법(3)]
+### 3. Swift 기초 문법(3)
 
 > 📌 Collection types -  Array / Dictionary / Set
 
